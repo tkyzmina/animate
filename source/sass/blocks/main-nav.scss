@@ -1,0 +1,64 @@
+.main-nav {
+  &__list {
+    @include reset-list;
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    margin-right: 45px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+    a {
+      position: relative;
+      color: $color-charcoal;
+      transition: color $trans-default;
+      &:hover {
+        color: $color-default-black;
+      }
+    }
+    .active {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 21px;
+        background-color: $color-atomic-tangerine;
+      }
+    }
+  }
+  @include vp-1023 {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $color-medium-sea-green;
+    opacity: 98%;
+    transition: transform $trans-default, opacity 0s, visibility 0s;
+    z-index: 10;
+    .main-nav__list {
+      flex-direction: column;
+      padding-top: 25px;
+    }
+    .main-nav__item {
+      width: 100%;
+      margin-right: 0;
+      a {
+        color: $color-default-white;
+        display: block;
+        padding: 16px;
+      }
+    }
+    .active {
+      background-color: $color-atomic-tangerine;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

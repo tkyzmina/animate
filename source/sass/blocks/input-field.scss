@@ -1,0 +1,34 @@
+.input-field {
+  position: relative;
+  &__input {
+    width: 100%;
+    min-width: 300px;
+    padding: 22px 58px 22px 40px;
+    border: none;
+    border-radius: 28px;
+    color: $color-grey;
+    outline: 0;
+    &:hover {
+      box-shadow: 0 0 4px 1px $color-whisper;
+    }
+  }
+  &__input-error {
+    box-shadow: 0 0 4px 1px $color-torch-red;
+  }
+  .btn-icon {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+  }
+  @include vp-767 {
+    input {
+      width: 100%;
+      min-width: auto;
+      padding: 15px 38px 15px 15px;
+      font-size: 14px;
+    }
+    .btn-icon {
+      top: 6px;
+    }
+  }
+}

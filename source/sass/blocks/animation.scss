@@ -1,0 +1,74 @@
+.animation {
+  &__wrapper {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    bottom: 602px;
+    left: 22px;
+    z-index: -1;
+  }
+  .flag {
+    border: 10px solid $color-default-white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+  &__flag1 {
+    @extend .flag;
+    left: -19px;
+    bottom: 153px;
+  }
+  &__flag2 {
+    @extend .flag;
+    left: -18px;
+    bottom: 293px;
+  }
+  &__flag3 {
+    @extend .flag;
+    left: 215px;
+    bottom: 420px;
+  }
+  &__flag4 {
+    @extend .flag;
+    left: 386px;
+    bottom: 293px;
+  }
+  &__flag5 {
+    @extend .flag;
+    left: 420px;
+    bottom: 153px;
+  }
+  &__flag6 {
+    @extend .flag;
+    left: 211px;
+    bottom: -39px;
+  }
+  &__dekor-1 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    fill: none;
+    stroke-width: 2px;
+    stroke: $color-whisper;
+    z-index: -3;
+  }
+  &__dekor-2 {
+    position: absolute;
+    left: 112px;
+    bottom: 196px;
+    width: 280px;
+    height: 280px;
+    fill: $color-medium-sea-green;
+    z-index: -1;
+  }
+  @include vp-767 {
+    &__wrapper {
+      display: none;
+    }
+    &__dekor-2 {
+      bottom: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

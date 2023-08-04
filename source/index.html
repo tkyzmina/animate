@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание проекта">
+  <title>Global</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="img/svg/logo.svg" alt="Логотип Global" width="131" height="40">
+        </a>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="active" href="#">Mobile Top Up</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Rate</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__controls-wrapper">
+          <a class="btn" href="# ">Sign Up</a>
+          <button class="header__burger" type="button" aria-label="Open menu"></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="promo container">
+        <div class="promo__info">
+          <h1 class="promo__title">Now Buy Your <br>PIN or <em>Top Up</em>
+          </h1>
+          <span class="promo__title">With Bank Transfer</span>
+          <div class="promo__text">
+          </div>
+          <a class="btn" href="#">Get Started</a>
+          <form class="promo__form" action="#">
+            <div class="input-field">
+              <input class="input-field__input" type="search" placeholder="Where do you want to call?">
+              <button class="btn btn-icon btn-search" type="submit" aria-label="search">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 27 27" width="27" height="27">
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.43 20.99a8.56 8.56 0 1 0 0-17.11 8.56 8.56 0 0 0 0 17.1Zm10.69 2.14-4.65-4.66" />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div class="promo__get-price">
+            <ul class="promo__user-list">
+              <li class="promo__user promo__user--add">
+                <a class="btn btn-icon btn-icon--small btn-icon--secondary">
+                  <svg fill="none" viewBox="0 0 19 19" width="19" height="19">
+                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9.5 3.96v11.08M3.96 9.5h11.08" />
+                  </svg>
+                </a>
+              </li>
+              <li class="promo__user">
+                <img class="promo__user-img" src="img/avatar3.png" alt="Изображение пользователя" width="38"
+                  height="38">
+              </li>
+              <li class="promo__user">
+                <img class="promo__user-img" src="img/avatar2.png" alt="Изображение пользователя" width="38"
+                  height="38">
+              </li>
+              <li class="promo__user">
+                <img class="promo__user-img" src="img/avatar1.png" alt="Изображение пользователя" width="38"
+                  height="38">
+              </li>
+            </ul>
+            <h2 class="promo__secondary-title">45k+ Regular User. <a href="#">View Price Plan</a></h2>
+          </div>
+        </div>
+        <div class="promo__img animation">
+          <picture>
+            <source type="image/webp" srcset="img/bg@1x.webp, img/bg@2x.webp 2x">
+            <img class="promo__img-picture" src="img/bg@1x.png" alt="Изображение женщины" srcset="img/bg@2x.png 2x"
+              width="462" height="557">
+          </picture>
+          <svg class="animation__dekor-2" viewBox="0 0 280 280">
+            <circle cx="140" cy="140" r="140"></circle>
+          </svg>
+          <div class="animation__wrapper" id="animate-circle">
+            <svg class="animation__dekor-1" viewBox="0 0 450 450">
+              <circle cx="225" cy="225" r="225"></circle>
+            </svg>
+            <img class="animation__flag1" id="flag1" src="img/flag1.png" alt="Изображение флага" width="50" height="50">
+            <img class="animation__flag2" id="flag2" src="img/flag2.png" alt="Изображение флага" width="80" height="80">
+            <img class="animation__flag3" id="flag3" src="img/flag3.png" alt="Изображение флага" width="60" height="60">
+            <img class="animation__flag4" id="flag4" src="img/flag4.png" alt="Изображение флага" width="70" height="70">
+            <img class="animation__flag5" id="flag5" src="img/flag1.png" alt="Изображение флага" width="50" height="50">
+            <img class="animation__flag6" src="img/flag2.png" alt="Изображение флага" width="80" height="80">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
